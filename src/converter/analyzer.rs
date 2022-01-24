@@ -1,6 +1,4 @@
-use std::result::Iter;
 
-use rocket::figment::value::Num;
 
 pub fn get_onset_index(char: char) -> u32 {
     (char as u32 - '가' as u32) / 28 / 21

@@ -1,5 +1,5 @@
 #[cfg(test)]
 #[test]
-fn getOnset(){
+fn get_onset(){
     
 }

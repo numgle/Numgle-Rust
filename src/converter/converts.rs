@@ -1,6 +1,5 @@
-use std::{cmp::min, slice::Iter, vec, sync::{Arc, RwLock}};
+use std::{cmp::min, slice::Iter, vec, sync::{Arc}};
 
-use rocket::Data;
 
 use super::{
     analyzer::{
