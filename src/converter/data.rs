@@ -40,7 +40,3 @@ pub struct DataSet{
     pub range:Arc<Ranges>,
 }
 
-unsafe impl Sync for DataSet {}
-unsafe impl Send for DataSet {}
-
-
