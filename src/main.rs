@@ -12,7 +12,7 @@ fn index(input:&str,state: &State<Converter>) -> String {
 
 #[launch]
 fn rocket() -> _ {
-    let dataset = fs::read_to_string("dataset.json").expect("dataset file not found");
+    let dataset = fs::read_to_string("./dataset/src/data.json").expect("dataset file not found");
     let d: DataSet = serde_json::from_str(&dataset).expect("parsing json fail");
     let c = converts::Converter::new(d);
     rocket::build().manage(c).mount("/", routes![index])
