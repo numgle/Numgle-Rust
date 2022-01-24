@@ -25,7 +25,7 @@ pub fn get_upper_engish_index(char: char) -> u32 {
 }
 
 pub fn get_number_index(char: char) -> u32 {
-    char as u32 - '1' as u32
+    char as u32 - '0' as u32
 }
 
 pub fn is_char_in_range(range: (u32, u32)) -> impl Fn(char) -> bool {
